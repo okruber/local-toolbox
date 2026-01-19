@@ -106,3 +106,6 @@ AGENTS.md
 .agent-skills/
 .claude/
 .gemini/
+
+CLAUDE.md
+openspec/
