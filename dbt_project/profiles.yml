@@ -1,0 +1,8 @@
+my_toolbox:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: '/opt/airflow/dwh/pokedex.duckdb'
+      extensions: 
+        - parquet
