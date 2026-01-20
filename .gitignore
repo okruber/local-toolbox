@@ -112,3 +112,16 @@ openspec/
 
 # Cube
 .cubestore/
+
+# DuckDB
+*.duckdb
+*.duckdb.wal
+
+# Airflow
+airflow/logs/
+data/airflow.db
+
+# dbt
+dbt_project/target/
+dbt_project/dbt_packages/
+dbt_project/logs/
