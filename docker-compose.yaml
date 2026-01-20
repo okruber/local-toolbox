@@ -65,3 +65,20 @@ services:
       - ./data:/opt/airflow/data
       - ./dwh:/opt/airflow/dwh
       - ./dbt_project:/opt/airflow/dbt_project
+
+  cube:
+    image: cubejs/cube:latest
+    ports:
+      - "4000:4000"    # Cube Playground + REST/GraphQL API
+      - "15432:15432"  # SQL API (PostgreSQL wire protocol)
+    depends_on:
+      airflow-init:
+        condition: service_completed_successfully
+    environment:
+      - CUBEJS_DEV_MODE=true
+      - CUBEJS_DB_TYPE=duckdb
+      - CUBEJS_DB_DUCKDB_DATABASE_PATH=/cube/dwh/pokedex.duckdb
+      - CUBEJS_CONCURRENCY=1
+    volumes:
+      - ./cube:/cube/conf
+      - ./dwh:/cube/dwh
