@@ -1,0 +1,23 @@
+[project]
+name = "nl-query-ui"
+version = "0.1.0"
+description = "Natural language query UI for Cube semantic layer"
+requires-python = ">=3.12"
+dependencies = [
+    "streamlit>=1.40.0",
+    "requests>=2.32.0",
+    "anthropic>=0.40.0",
+    "openai>=1.50.0",
+    "ollama>=0.4.0",
+    "pandas>=2.2.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.8.0",
+]

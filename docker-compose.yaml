@@ -82,3 +82,22 @@ services:
     volumes:
       - ./cube:/cube/conf
       - ./dwh:/cube/dwh
+
+  nl-query-ui:
+    build: ./streamlit
+    ports:
+      - "8501:8501"
+    depends_on:
+      - cube
+    environment:
+      - CUBE_URL=http://cube:4000
+      - LLM_PROVIDER=${LLM_PROVIDER:-anthropic}
+      - LLM_MODEL=${LLM_MODEL:-}
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY:-}
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+      - OLLAMA_HOST=${OLLAMA_HOST:-http://host.docker.internal:11434}
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "http://localhost:8501/_stcore/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
