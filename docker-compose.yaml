@@ -17,6 +17,7 @@ services:
       - ./airflow/dags:/opt/airflow/dags
       - ./airflow/logs:/opt/airflow/logs
       - ./airflow/plugins:/opt/airflow/plugins
+      - ./airflow/config:/opt/airflow/config
       - ./data:/opt/airflow/data
       - ./dwh:/opt/airflow/dwh
       - ./dbt_project:/opt/airflow/dbt_project
@@ -42,6 +43,7 @@ services:
       - ./airflow/dags:/opt/airflow/dags
       - ./airflow/logs:/opt/airflow/logs
       - ./airflow/plugins:/opt/airflow/plugins
+      - ./airflow/config:/opt/airflow/config
       - ./data:/opt/airflow/data
       - ./dwh:/opt/airflow/dwh
       - ./dbt_project:/opt/airflow/dbt_project
@@ -62,6 +64,7 @@ services:
       - ./airflow/dags:/opt/airflow/dags
       - ./airflow/logs:/opt/airflow/logs
       - ./airflow/plugins:/opt/airflow/plugins
+      - ./airflow/config:/opt/airflow/config
       - ./data:/opt/airflow/data
       - ./dwh:/opt/airflow/dwh
       - ./dbt_project:/opt/airflow/dbt_project

@@ -20,4 +20,4 @@ RUN printf '#!/bin/bash\nexec /opt/dbt_venv/bin/dbt "$@"\n' > /usr/local/bin/dbt
 
 USER airflow
 
-RUN pip install --no-cache-dir duckdb requests pandas
+RUN pip install --no-cache-dir duckdb requests pandas pyyaml
