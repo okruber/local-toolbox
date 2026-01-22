@@ -64,22 +64,10 @@ cube('MartPokedex', {
       description: 'Base experience points for the Pokemon'
     },
 
-    typeName: {
-      sql: 'type_name',
+    types: {
+      sql: `array_to_string(types, ', ')`,
       type: 'string',
-      description: 'Primary type of the Pokemon'
-    },
-
-    typeGeneration: {
-      sql: 'type_generation',
-      type: 'number',
-      description: 'Generation when the type was introduced'
-    },
-
-    moveDamageClass: {
-      sql: 'move_damage_class',
-      type: 'string',
-      description: 'Damage class of the Pokemon type (physical, special, status)'
+      description: 'Types of the Pokemon (comma-separated)'
     }
   }
 });

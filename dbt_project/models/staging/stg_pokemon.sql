@@ -1,23 +1,17 @@
 
 /*
     Staging model for Pokemon.
-    Unnests the 'types' list to create a grain of pokemon_id per type if we wanted, 
-    but for this simple mart, we might just keep it as a list or take the primary type.
-    Let's unnest to have rows like (pikachu, electric).
+    Keeps types as an array to maintain one row per pokemon.
 */
 with raw as (
     select * from {{ source('duckdb', 'raw_pokemon') }}
-),
-
-unnested as (
-    select 
-        id as pokemon_id,
-        name,
-        height,
-        weight,
-        base_experience,
-        unnest(types) as type_name
-    from raw
 )
 
-select * from unnested
+select
+    id as pokemon_id,
+    name,
+    height,
+    weight,
+    base_experience,
+    types
+from raw
