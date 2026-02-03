@@ -1,0 +1,11 @@
+[project]
+name = "dbt-requirements"
+version = "0.1.0"
+description = "DBT dependencies for Airflow container"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+    "dbt-duckdb",
+    "dbt-core",
+    "duckdb",
+    "protobuf>=5.26.0,<6.0.0",
+]

@@ -1,1 +1,122 @@
-[{"id": 1, "name": "normal", "generation": "generation-i", "move_damage_class": "physical"}, {"id": 2, "name": "fighting", "generation": "generation-i", "move_damage_class": "physical"}, {"id": 3, "name": "flying", "generation": "generation-i", "move_damage_class": "physical"}, {"id": 4, "name": "poison", "generation": "generation-i", "move_damage_class": "physical"}, {"id": 5, "name": "ground", "generation": "generation-i", "move_damage_class": "physical"}, {"id": 6, "name": "rock", "generation": "generation-i", "move_damage_class": "physical"}, {"id": 7, "name": "bug", "generation": "generation-i", "move_damage_class": "physical"}, {"id": 8, "name": "ghost", "generation": "generation-i", "move_damage_class": "physical"}, {"id": 9, "name": "steel", "generation": "generation-ii", "move_damage_class": "physical"}, {"id": 10, "name": "fire", "generation": "generation-i", "move_damage_class": "special"}]
+[
+  {
+    "id": 1,
+    "name": "normal",
+    "generation": "generation-i",
+    "move_damage_class": "physical"
+  },
+  {
+    "id": 2,
+    "name": "fighting",
+    "generation": "generation-i",
+    "move_damage_class": "physical"
+  },
+  {
+    "id": 3,
+    "name": "flying",
+    "generation": "generation-i",
+    "move_damage_class": "physical"
+  },
+  {
+    "id": 4,
+    "name": "poison",
+    "generation": "generation-i",
+    "move_damage_class": "physical"
+  },
+  {
+    "id": 5,
+    "name": "ground",
+    "generation": "generation-i",
+    "move_damage_class": "physical"
+  },
+  {
+    "id": 6,
+    "name": "rock",
+    "generation": "generation-i",
+    "move_damage_class": "physical"
+  },
+  {
+    "id": 7,
+    "name": "bug",
+    "generation": "generation-i",
+    "move_damage_class": "physical"
+  },
+  {
+    "id": 8,
+    "name": "ghost",
+    "generation": "generation-i",
+    "move_damage_class": "physical"
+  },
+  {
+    "id": 9,
+    "name": "steel",
+    "generation": "generation-ii",
+    "move_damage_class": "physical"
+  },
+  {
+    "id": 10,
+    "name": "fire",
+    "generation": "generation-i",
+    "move_damage_class": "special"
+  },
+  {
+    "id": 11,
+    "name": "water",
+    "generation": "generation-i",
+    "move_damage_class": "special"
+  },
+  {
+    "id": 12,
+    "name": "grass",
+    "generation": "generation-i",
+    "move_damage_class": "special"
+  },
+  {
+    "id": 13,
+    "name": "electric",
+    "generation": "generation-i",
+    "move_damage_class": "special"
+  },
+  {
+    "id": 14,
+    "name": "psychic",
+    "generation": "generation-i",
+    "move_damage_class": "special"
+  },
+  {
+    "id": 15,
+    "name": "ice",
+    "generation": "generation-i",
+    "move_damage_class": "special"
+  },
+  {
+    "id": 16,
+    "name": "dragon",
+    "generation": "generation-i",
+    "move_damage_class": "special"
+  },
+  {
+    "id": 17,
+    "name": "dark",
+    "generation": "generation-ii",
+    "move_damage_class": "special"
+  },
+  {
+    "id": 18,
+    "name": "fairy",
+    "generation": "generation-vi",
+    "move_damage_class": null
+  },
+  {
+    "id": 19,
+    "name": "stellar",
+    "generation": "generation-ix",
+    "move_damage_class": null
+  },
+  {
+    "id": 10001,
+    "name": "unknown",
+    "generation": "generation-ii",
+    "move_damage_class": null
+  }
+]
